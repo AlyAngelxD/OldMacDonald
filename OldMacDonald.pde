@@ -1,6 +1,7 @@
-
-void setup()
+public void setup()
 {
-	//your variable declarations here
+	Farm leFarm = new Farm();
+	leFarm.animalSounds();
 }
 
+ 
