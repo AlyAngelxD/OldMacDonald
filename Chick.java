@@ -14,12 +14,16 @@ class Chick implements Animal
         myOtherSound = "unknown";
 	   	
     }
-    public String getSound(){return mySound;}
+    public String getSound() 
+    {
+        if (Math.random() < 0.5)       
+            return mySound;
+        else 
+            return myOtherSound;
+    }
     public String getType(){return myType;}
     public void setType(String sound, String otherSound) {
-        if (Math.random() < 0.5)
-            mySound = sound;
-        else 
-            mySound = otherSound;
+        mySound = sound;
+        mySound = otherSound;
     }
 }
